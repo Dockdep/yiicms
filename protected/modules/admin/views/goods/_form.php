@@ -108,22 +108,21 @@
     </div>
 
     <div class="f-topic-title_2"><!--файл-->
-        <p><?php echo $form->labelEx($model,'Миниатюра:'); ?></p>
+        <p><?php echo $form->labelEx($model,'Фото товара:'); ?></p>
 		<div>
         <input name="pic_min" id="Goods_pic_min" type="file">
     </div>
     </div>
-
-    <div class="f-topic-title_2"><!--файл-->
-        <p><?php echo $form->labelEx($model,'Фото:'); ?></p>
-		<div>
-        <?php echo $form->fileField($model,'pic_full'); ?>
-        <?php echo $form->error($model,'pic_full'); ?>
-    </div>
-    </div>
-
-
-
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<div class="form_3">
 		<div class="form_3_1"><!--чекбокс-->
         <?php echo $form->labelEx($model,'Выберите категорю'); ?></div>

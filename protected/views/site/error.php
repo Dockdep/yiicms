@@ -7,9 +7,9 @@ $this->breadcrumbs=array(
 	'Error',
 );
 ?>
-
-<h2>Error <?php echo $code; ?></h2>
-
-<div class="error">
-<?php echo CHtml::encode($message); ?>
+<div class="watch_block_s_er_404">
+	<h2>Error <?php echo $code; ?></h2>
+</div>
+<div class="watch_block_s_er_404">
+	<?php echo CHtml::encode($message); ?>
 </div>

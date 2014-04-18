@@ -4,55 +4,65 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="en" />
-
-	<!-- blueprint CSS framework -->
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
-	<!--[if lt IE 8]>
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
-	<![endif]-->
-
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
+	
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style.css"/>
+	<!--[if lte IE 8]><script href="<?php echo Yii::app()->request->baseUrl; ?>/css/js/oldies.js" charset="utf-8"></script><![endif]-->	
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
 <body>
+<div class="sait">
+	<div class="head">
+	<div id="search_f"></div>
+	<form class="form-wrapper" action="./" method="get">
+		<input id="search" type="text" name="s" id="s" value="" placeholder="Я ищу..." />
+		<input id="submit" type="submit" value="найти" />
+	</form>
+		<div id="#">
+			<div id="#"><?php echo CHtml::encode(Yii::app()->name); ?></div>
+		</div>
+	</div>
 
-<div class="container" id="page">
+	
 
-	<div id="header">
-		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
-	</div><!-- header -->
-
-	<div id="mainmenu">
+	<div id="menu">
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
-				array('label'=>'Home', 'url'=>array('/site/index')),
+				array('label'=>'Главная', 'url'=>array('/site/index')),
+				array('label'=>'Купить часы', 'url'=>array('/site/page', 'view'=>'buy_watches')),
 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'Contact', 'url'=>array('/site/contact')),
+				array('label'=>'Скупка', 'url'=>array('/site/contact')),
                 array('label'=>'Админка', 'url'=>array('admin/goods/index')),
 			),
 		)); ?>
-	</div><!-- mainmenu -->
-	<?php if(isset($this->breadcrumbs)):?>
-		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
-			'links'=>$this->breadcrumbs,
-		)); ?><!-- breadcrumbs -->
-	<?php endif?>
+	</div><!-- menu -->
+	<div class="content">
+		<div class="crumbs_">
+		<?php if(isset($this->breadcrumbs)):?>
+			<?php $this->widget('zii.widgets.CBreadcrumbs', array(
+				'links'=>$this->breadcrumbs,
+			)); ?><!-- breadcrumbs -->
+		<?php endif?>
+		</div>
+		
+		<?php echo $content; ?>
 
-	<?php echo $content; ?>
-
-	<div class="clear"></div>
-
-	<div id="footer">
+	</div>
+	
+	<div class="footer">
+	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br/>
 		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
 		All Rights Reserved.<br/>
-		<?php echo Yii::powered(); ?>
+		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
+		All Rights Reserved.<br/>
+		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
+		All Rights Reserved.<br/>
+		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
+		All Rights Reserved.<br/>
 	</div><!-- footer -->
 
-</div><!-- page -->
+</div><!-- site -->
 
 </body>
 </html>

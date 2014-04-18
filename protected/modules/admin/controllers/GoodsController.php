@@ -89,7 +89,7 @@ class GoodsController extends Controller
         imagefill($image_p, 0, 0, $color);
         $image = imagecreatefromjpeg($fileway);
         imagecopyresampled($image_p, $image, $padding_w, $padding_h, 0, 0, $new_width, $new_height, $width_old, $height_old);
-        imagejpeg($image_p, "pic/".$filename ,100);
+        imagejpeg($image_p, "pic/".$filename, 100);
     }
 
     public function actionCreate()
@@ -108,6 +108,7 @@ class GoodsController extends Controller
             }else{
                 $_POST['Goods']['draft']=1;
             }
+			$_POST['Goods']['pic_min'] = $_FILES['pic_min']['name'];
             $picture = $_FILES['pic_min'];
             $this->pictureValidate($picture);
             $model->attributes=$_POST['Goods'];
@@ -140,6 +141,9 @@ class GoodsController extends Controller
             }else{
                 $_POST['Goods']['draft']=1;
             }
+			$_POST['Goods']['pic_min'] = $_FILES['pic_min']['name'];
+            $picture = $_FILES['pic_min'];
+            $this->pictureValidate($picture);
             $model->attributes=$_POST['Goods'];
             if($model->save())
                 $this->redirect(array('view','id'=>$model->goods_id));
@@ -218,4 +222,7 @@ class GoodsController extends Controller
             Yii::app()->end();
         }
     }
+	
+
+	
 }
