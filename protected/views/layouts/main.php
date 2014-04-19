@@ -30,7 +30,7 @@
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Главная', 'url'=>array('/site/index')),
-				array('label'=>'Купить часы', 'url'=>array('/site/page', 'view'=>'buy_watches')),
+				array('label'=>'Купить часы', 'url'=>array('/store')),
 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Скупка', 'url'=>array('/site/contact')),
                 array('label'=>'Админка', 'url'=>array('admin/goods/index')),

@@ -134,4 +134,5 @@ class Goods extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
 }

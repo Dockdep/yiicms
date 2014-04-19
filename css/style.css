@@ -302,7 +302,7 @@ height: 200px;margin-top:50px;}
     background: -moz-linear-gradient(top, rgba(255,255,255,.6) 0%, rgba(255,255,255,0) 100%); /* firefox */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.6)), color-stop(100%,rgba(255,255,255,0))); /* webkit */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#55FFFFFF, endColorstr=#00ffffff);
-    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#55FFFFFF, endColorstr=#00ffffff);
+    -ms-filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#55FFFFFF, endColorstr=#00ffffff);
 }
 
 
@@ -380,7 +380,73 @@ height: 200px;margin-top:50px;}
 .current, .breadcrumbs, .breadcrumbs a{color:#A6A6A6;font-size:13px;}
 .crumbs_{padding-left:13px;height:20px;width:100%;margin-bottom:25px;}
 .hpc{height:200px;width:100%;}
-.nav{float:left;height:50px; width:100%;margin-top:25px;}
+.pager{float:left;height:50px; width:100%;margin-top:25px;}
+/**
+ * CSS styles for CLinkPager.
+ *
+ * @author Qiang Xue <qiang.xue@gmail.com>
+ * @link http://www.yiiframework.com/
+ * @copyright 2008-2010 Yii Software LLC
+ * @license http://www.yiiframework.com/license/
+ * @since 1.0
+ */
+
+ul.yiiPager
+{
+    font-size:11px;
+    border:0;
+    margin:0;
+    padding:0;
+    line-height:100%;
+    display:inline;
+}
+
+ul.yiiPager li
+{
+    display:inline;
+}
+
+ul.yiiPager a:link,
+ul.yiiPager a:visited
+{
+    border:solid 1px #9aafe5;
+    font-weight:bold;
+    color:#0e509e;
+    padding:1px 6px;
+    text-decoration:none;
+}
+
+ul.yiiPager .page a
+{
+    font-weight:normal;
+}
+
+ul.yiiPager a:hover
+{
+    border:solid 1px #0e509e;
+}
+
+ul.yiiPager .selected a
+{
+    background:#2e6ab1;
+    color:#FFFFFF;
+    font-weight:bold;
+}
+
+ul.yiiPager .hidden a
+{
+    border:solid 1px #DEDEDE;
+    color:#888888;
+}
+
+/**
+ * Hide first and last buttons by default.
+ */
+ul.yiiPager .first,
+ul.yiiPager .last
+{
+    display:none;
+}
 #nav{height:40px;text-align:center;overflow:hidden;padding-top:16px;
 font-size:16px;
 color:red;}
