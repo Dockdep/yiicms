@@ -2,56 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b402bd26-4a04-40f4-bce7-92034a7b59e4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/1000X200-CORUM.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/50741-45-21.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/62345-43-25-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/88787-41-75.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/cat_img/A.Lange.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/cat_img/Alain Silberstein.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/cat_img/Andersen Geneve.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/cat_img/Antoine Preziuso.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/cat_img/Armin Strom.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/cat_img/Arnold and Son.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/cat_img/Audemars Piguet.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/cat_img/B.R.M.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/cat_img/BLU.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/cat_img/Blancpain.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/cat_img/Bovet.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/cat_img/Breguet.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/cat_img/Buben and Zorweg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/cat_img/Carl F.Bucherer.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/cat_img/Cartier.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/cat_img/Chopard.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/cat_img/Christiaan van der Klaauw.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/cat_img/Corum.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/cat_img/Cvstos.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/cat_img/Daniel Roth.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/cat_img/De Bethune.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/cat_img/DeWitt.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/cat_img/F.P. Journe.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/cat_img/Girard-Perregaux.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/cat_img/HD3 Complication.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/cat_img/Hermes.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/cat_img/Hublot.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/cat_img/Omega.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/cat_img/Patek Philippe.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/cat_img/Piaget.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/cat_img/Rolex.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/cat_img/Ulysse Nardin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/cat_img/de Grisogono.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/hower_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/menuseparator.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/nav.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/images/page_t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/controllers/StoreController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/store/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/js/zoomy.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/js/zoomy1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Goods.php" afterPath="$PROJECT_DIR$/protected/models/Goods.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/main.php" afterPath="$PROJECT_DIR$/protected/views/layouts/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="yiicms.iws" />
@@ -125,7 +75,7 @@
       <file leaf-file-name="StoreController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/controllers/StoreController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="43" selection-start="3128" selection-end="3128" vertical-scroll-proportion="-0.4651712" vertical-offset="2519" max-vertical-offset="3366">
+            <state line="125" column="43" selection-start="3128" selection-end="3128" vertical-scroll-proportion="0.016528925" vertical-offset="2111" max-vertical-offset="3366">
               <folding />
             </state>
           </provider>
@@ -644,13 +594,18 @@
       <created>1397851483811</created>
       <updated>1397851483811</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="tyukjityuuiy">
+      <created>1397934441137</created>
+      <updated>1397934441137</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -666,7 +621,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -819,7 +773,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/StoreController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="43" selection-start="3128" selection-end="3128" vertical-scroll-proportion="-0.4651712" vertical-offset="2519" max-vertical-offset="3366">
+        <state line="125" column="43" selection-start="3128" selection-end="3128" vertical-scroll-proportion="0.016528925" vertical-offset="2111" max-vertical-offset="3366">
           <folding />
         </state>
       </provider>
