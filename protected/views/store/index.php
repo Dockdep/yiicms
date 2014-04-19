@@ -7,9 +7,9 @@ $this->breadcrumbs=array(
 );
 
 ?>
-<?php
-    require_once('protected\views\site\sidebar.php');
-?>
+
+<?php $this->renderPartial('_sidebar', $this->sidebar); ?>
+
 <div class="watch_block">
 
 <?php

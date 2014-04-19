@@ -8,6 +8,7 @@ class StoreController extends Controller
 	 */
 	public $layout='//layouts/column2';
     public $categoryName=array();
+    public $sidebar;
 
 	/**
 	 * @return array action filters
@@ -52,8 +53,10 @@ class StoreController extends Controller
 	 */
 	public function actionView($id)
 	{
-		$this->render('view',array(
-			'model'=>$this->loadModel($id),
+        $this->sidebar = Produser::model()->findAll();
+        $model = $this->loadModel($id);
+        $this->render('view',array(
+			'model'=>$model,
 		));
 	}
 
@@ -141,9 +144,10 @@ class StoreController extends Controller
         )
         ));
 
+        $this->sidebar = Produser::model()->findAll();
+
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
-            'model' => $model,
 		));
 	}
 
