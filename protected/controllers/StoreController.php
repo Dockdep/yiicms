@@ -30,7 +30,7 @@ class StoreController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view', 'sidebarchild', 'selectgoods' ),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -53,8 +53,9 @@ class StoreController extends Controller
 	 */
 	public function actionView($id)
 	{
-        $this->sidebar = Produser::model()->findAll();
+
         $model = $this->loadModel($id);
+        $this->sidebar = Produser::model()->getMainWatch();
         $this->render('view',array(
 			'model'=>$model,
 		));
@@ -144,12 +145,13 @@ class StoreController extends Controller
         )
         ));
 
-        $this->sidebar = Produser::model()->findAll();
+        $this->sidebar = Produser::model()->getMainWatch();
 
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
 	}
+
 
 	/**
 	 * Manages all models.
@@ -166,6 +168,15 @@ class StoreController extends Controller
 		));
 	}
 
+    public function actionSidebarChild()
+    {
+        if(isset($_POST['id'])) {
+            $id = $_POST['id'];
+            $this->sidebar = Produser::model()->getByParent($id);
+            $this->renderPartial('_sidebar', $this->sidebar);
+        }
+    }
+
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
@@ -180,6 +191,57 @@ class StoreController extends Controller
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
 	}
+
+    public function actionSelectGoods()
+    {
+        if(isset($_POST['id'])) {
+            $id = $_POST['id'];
+            $produser =  Produser::model();
+            $array = $produser->getProduserName($id);
+            array_push($array, $id);
+            $model = Goods::model()->findAllByAttributes(array('child_id' =>$array));
+            $num=count($model);
+            for($i=0; $i<$num; $i++){
+                $id = $model[$i]['child_id'];
+                $this->categoryName[$id]['name'] = $produser->findByPk($id)->parent_id;
+                if($this->categoryName[$id]['name']){
+                    $this->categoryName[$id]['name']= $produser->find('prod_id = :parentId', array(':parentId' => $this->categoryName[$id]['name']))->name;
+                } else {
+                    $this->categoryName[$id]['name'] = $produser->findByPk($id)->name;
+                }
+            }
+            $dataProvider=new CArrayDataProvider($model, array(
+                'sort'=>array(
+                    'attributes'=>array(
+                        'title', 'date', 'price'
+                    ),
+                ),
+                'pagination'=>array(
+                    'pageSize'=>'6',
+                ),
+            ));
+
+            $this->widget('zii.widgets.CListView', array(
+                'dataProvider'=>$dataProvider,
+                'viewData' => array('categoryName'=>$this->categoryName),
+                'itemView'=>'_view',
+                'summaryText' => '',
+                'pager' => array(
+                    'class' => 'CLinkPager',
+                    'header' => '',
+                    'firstPageLabel'=>'<<',
+                    'prevPageLabel'=>'<',
+                    'nextPageLabel'=>'>',
+                    'lastPageLabel'=>'>>',
+                    'maxButtonCount'=>'4',
+                    'cssFile'=>'false'
+                ),
+
+            ));
+
+        }
+    }
+
 
 	/**
 	 * Performs the AJAX validation.

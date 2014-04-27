@@ -201,7 +201,7 @@ border:1px solid #353434;
 -moz-box-shadow: 10px 10px 8px 3px rgba(0,0,0,0.75);
 box-shadow: 10px 10px 8px 3px rgba(0,0,0,0.75);
 filter: progid:DXImageTransform.Microsoft.shadow(direction=120, color=#000000, strength=20);}
-.test_block3{width:190px;height:15px; background:url(12345.png);position:absolute;margin-top:387px;border-radius:0 0 10px 10px;}
+.test_block3{width:190px;height:15px; background:url(images/12345.png);position:absolute;margin-top:387px;border-radius:0 0 10px 10px;}
 .test_block2:hover .test_block3{display:none;}
 .about_watch{height:auto;text-align:center;font-family: Geneva, Arial, Helvetica, sans-serif;color:#A6A6A6;overflow:hidden;}
 #about_ab{height:80px;overflow:hidden;font-size:16px;}
@@ -249,11 +249,17 @@ filter: progid:DXImageTransform.Microsoft.shadow(direction=120, color=#000000, s
 width: 980px;
 height: 200px;margin-top:50px;}
 /*---------------------start sidebar-------------------------*/
-#sidebar_left{float:left;width:250px;margin-left:10px;border-radius:10px; background-color:#0f0c0b;padding-bottom:20px;}
-#sidebar_left ul{padding-left:0px;color:#8C7E57;list-style:none;font-size:16px;}
-#sidebar_left li{padding-left:10px;padding-top:10px;font-family: Geneva, Arial, Helvetica, sans-serif;}
-#sidebar_left  li a{text-decoration:none;color:#A6A6A6;border-left:5px solid #8C7E57;padding-left:20px;}
-#sidebar_left li a:hover{padding-left:-30px;color:#8C7E57;border-left:5px solid #A6A6A6;}
+#sidebar_block {
+    float:left;
+    height: 100%;
+    position: relative;
+}
+.sidebar_left{width:250px;border-radius:10px; background-color:#0f0c0b;padding-bottom:20px; position: absolute; top: 0px; left: 10px;}
+.sidebar_left ul{padding-left:0px;color:#8C7E57;list-style:none;font-size:16px;}
+.sidebar_left li{padding-left:10px;padding-top:10px;font-family: Geneva, Arial, Helvetica, sans-serif;}
+.sidebar_left  li a{text-decoration:none;color:#A6A6A6;border-left:5px solid #8C7E57;padding-left:20px;}
+.sidebar_left li a:hover{padding-left:-30px;color:#8C7E57;border-left:5px solid #A6A6A6;}
+
 
 
 /*----------------------end sidebar-------------------------*/
@@ -380,20 +386,10 @@ height: 200px;margin-top:50px;}
 .current, .breadcrumbs, .breadcrumbs a{color:#A6A6A6;font-size:13px;}
 .crumbs_{padding-left:13px;height:20px;width:100%;margin-bottom:25px;}
 .hpc{height:200px;width:100%;}
-.pager{float:left;height:50px; width:100%;margin-top:25px;}
-/**
- * CSS styles for CLinkPager.
- *
- * @author Qiang Xue <qiang.xue@gmail.com>
- * @link http://www.yiiframework.com/
- * @copyright 2008-2010 Yii Software LLC
- * @license http://www.yiiframework.com/license/
- * @since 1.0
- */
-
+.pager{float:left;height:100px; width:100%;margin-top:25px;}
 ul.yiiPager
-{
-    font-size:11px;
+{margin-top:25px ;
+    font-size:16px;
     border:0;
     margin:0;
     padding:0;
@@ -409,34 +405,46 @@ ul.yiiPager li
 ul.yiiPager a:link,
 ul.yiiPager a:visited
 {
-    border:solid 1px #9aafe5;
-    font-weight:bold;
-    color:#0e509e;
-    padding:1px 6px;
-    text-decoration:none;
+    margin-top:5px;font-size:16px;padding:10px 15px;margin-right:5px;
+    text-decoration:none;background-color:#0f0c0b;color:#A6A6A6;border-radius:7px;
+    -webkit-box-shadow: 3px 3px 2px 0px rgba(0,0,0, 0.75);
+    -moz-box-shadow:    3px 3px 2px 0px rgba(0,0,0, 0.75);
+    box-shadow:         3px 3px 2px 0px rgba(0,0,0, 0.75);
 }
 
 ul.yiiPager .page a
 {
-    font-weight:normal;
+    margin-top:5px;font-size:16px;padding:10px 15px;margin-right:5px;
+    text-decoration:none;background-color:#0f0c0b;color:#A6A6A6;border-radius:7px;
+    -webkit-box-shadow: 3px 3px 2px 0px rgba(0,0,0, 0.75);
+    -moz-box-shadow:    3px 3px 2px 0px rgba(0,0,0, 0.75);
+    box-shadow:         3px 3px 2px 0px rgba(0,0,0, 0.75);
 }
 
 ul.yiiPager a:hover
+ {
+     color:#8C7E57;
+ }
+
+ul.yiiPager .hidden a :hover
 {
-    border:solid 1px #0e509e;
+    color:#8C7E57;
 }
+
+
 
 ul.yiiPager .selected a
 {
-    background:#2e6ab1;
-    color:#FFFFFF;
-    font-weight:bold;
+    padding:10px 15px;font-size:16px;margin-right:5px;color:#8C7E57;border-radius:7px;background-color:#0f0c0b;
+    -webkit-box-shadow: inset 3px 3px 2px 0px rgba(0,0,0, 0.75);
+    -moz-box-shadow: inset 3px 3px 2px 0px rgba(0,0,0, 0.75);
+    box-shadow: inset 3px 3px 2px 0px rgba(0,0,0, 0.75);
 }
 
 ul.yiiPager .hidden a
 {
-    border:solid 1px #DEDEDE;
-    color:#888888;
+
+    color:#A6A6A6;
 }
 
 /**
@@ -445,14 +453,13 @@ ul.yiiPager .hidden a
 ul.yiiPager .first,
 ul.yiiPager .last
 {
-    display:none;
+    display:inline;
 }
 #nav{height:40px;text-align:center;overflow:hidden;padding-top:16px;
 font-size:16px;
 color:red;}
 #nav a{margin-top:5px;font-size:16px;padding:10px 15px;margin-right:5px;
-color:blue;
-text-decoration:none;background-color:#0f0c0b;color:#A6A6A6;border-radius:7px;
+text-decoration:none;background-color:#0f0c0b; color: #A6A6A6; border-radius:7px;
 -webkit-box-shadow: 3px 3px 2px 0px rgba(0,0,0, 0.75);
 -moz-box-shadow:    3px 3px 2px 0px rgba(0,0,0, 0.75);
 box-shadow:         3px 3px 2px 0px rgba(0,0,0, 0.75);

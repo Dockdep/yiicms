@@ -9,9 +9,7 @@ $this->breadcrumbs=array(
 ?>
 
 <?php $this->renderPartial('_sidebar', $this->sidebar); ?>
-
 <div class="watch_block">
-
 <?php
 $categoryName = $this->categoryName;
 $this->widget('zii.widgets.CListView', array(
@@ -19,6 +17,7 @@ $this->widget('zii.widgets.CListView', array(
     'viewData' => array('categoryName'=>$categoryName),
 	'itemView'=>'_view',
     'summaryText' => '',
+    'sortableAttributes' => array('title', 'date', 'price'),
     'pager' => array(
         'class' => 'CLinkPager',
         'header' => '',
@@ -32,3 +31,38 @@ $this->widget('zii.widgets.CListView', array(
 
 )); ?>
 </div>
+
+<script>
+    jQuery(document).ready(function(){
+        $("#sidebar_block").on("click", ".sidebar-row", function(event){
+            console.log("fdggfd");
+            var row = $(this);
+            var id = row.data("id");
+            $.post( "http://yiicms/index.php?r=store/selectgoods", {id: id }, function( data ) {
+                $(".watch_block").find('*').remove();
+                $(".watch_block").append(data);
+            });
+
+        })
+
+        $(".sidebar-row").click(function(event){
+            var row = $(this);
+            var id = row.data("id");
+            var block = row.parents('.sidebar_left');
+            $.post( "http://yiicms/index.php?r=store/sidebarchild", {id: id }, function( data ) {
+                $(block).css("top", "0px");
+                $("#sidebar_block").find(".sidebar_left").not(block).remove();
+                var content = data;
+                var newBlock = $("#sidebar_block").append(content).find(".sidebar_left").not(block);
+                var height = $(newBlock).css("left", "-999px").innerHeight();
+                var newTop = height+15;
+                $( block ).animate({ top: newTop+"px"}, 500);
+                $(newBlock).animate({ left: "10px"}, 1000);
+            });
+
+        })
+
+
+    })
+
+</script>

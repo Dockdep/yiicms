@@ -204,26 +204,26 @@ div.wide.form .buttons, div.wide.form .hint, div.wide.form .errorMessage
 #LoginForm_username,#LoginForm_password{background: #ccc;border: 2px inset #E7E4E4;font-size:24px;margin-left:38px;}
 /*--------end стили админки---------*/
 #scrollList{
-
+    overflow:scroll;max-height:320px;overflow-x:hidden;
 }
 #scrollList ul{
     list-style: none;
 }
 .dropBlock{
-    width: 100px;
+    width: 200px;
     padding: 10px 5px;
     text-align: center;
     border: 1px solid greenyellow;
 }
 .drop{
-    width:100px;
+    width:100px; background-color: #585858;
 }
 .dropCss{
-    width: 100px;
-    padding: 10px 5px;
+    width: 362px;
+    padding: 10px 0px;
     text-align: center;
-    border: 1px solid #0000ff;
+    border-bottom: 1px solid #151515;cursor:pointer;
 }
 .haveSubBlock{
-    background-color: red;
+    background-color: #727070;
 }

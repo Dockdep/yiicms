@@ -46,7 +46,7 @@ class Goods extends CActiveRecord
 			array('date', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('goods_id, title, stock, desc_min, desc_full, date, price, currency, pic_min, pic_full, child_id, gender, description, keywords, draft', 'safe', 'on'=>'search'),
+			array('id, title, stock, desc_min, desc_full, date, price, currency, pic_min, pic_full, child_id, gender, description, keywords, draft', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -67,7 +67,7 @@ class Goods extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'goods_id' => 'Goods',
+			'id' => 'Goods',
 			'title' => 'Title',
 			'stock' => 'Наличие',
 			'desc_min' => 'Desc Min',
@@ -103,7 +103,7 @@ class Goods extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('goods_id',$this->goods_id);
+		$criteria->compare('id',$this->id);
 		$criteria->compare('title',$this->title,true);
 		$criteria->compare('stock',$this->stock);
 		$criteria->compare('desc_min',$this->desc_min,true);
@@ -134,5 +134,4 @@ class Goods extends CActiveRecord
 	{
 		return parent::model($className);
 	}
-
 }

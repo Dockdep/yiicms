@@ -19,11 +19,12 @@
             <div id="about_ab_excerpt">
                 <?php echo CHtml::encode($data->desc_min); ?>
                 </br>
-                <?php echo CHtml::link('Перейти к полному обзору',array('/store/view', 'id' =>$data->goods_id)); ?><br></br>
+                <?php echo CHtml::link('Перейти к полному обзору',array('/store/view', 'id' =>$data->id)); ?><br></br>
             </div>
         </div>
     </div>
 </div>
+
 
 
 	<?php /*

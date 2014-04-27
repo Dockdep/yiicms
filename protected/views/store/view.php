@@ -30,3 +30,27 @@
         </div>
     </div>
 </div>
+
+<script>
+    jQuery(document).ready(function(){
+        $(".sidebar-row").click(function(event){
+            var row = $(this);
+            var id = row.data("id");
+            var block = row.parents('.sidebar_left');
+            $.post( "http://yiicms/index.php?r=store/sidebarchild", {id: id }, function( data ) {
+                $(block).css("top", "0px");
+                $("#sidebar_block").find(".sidebar_left").not(block).remove();
+                var content = data;
+                var newBlock = $("#sidebar_block").append(content).find(".sidebar_left").not(block);
+                var height = $(newBlock).css("left", "-999px").innerHeight();
+                var newTop = height+15;
+                $( block ).animate({ top: newTop+"px"}, 500);
+                $(newBlock).animate({ left: "10px"}, 1000);
+            });
+
+        })
+
+
+    })
+
+</script>

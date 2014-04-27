@@ -27,11 +27,11 @@ class Produser extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('name', 'required'),
-			array('parent_id', 'numerical', 'integerOnly'=>true),
+			array('parent_id', 'numerical', 'category_id', 'integerOnly'=>true),
 			array('name', 'length', 'max'=>200),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('prod_id, name, parent_id', 'safe', 'on'=>'search'),
+			array('prod_id, name, parent_id, category_id',  'safe', 'on'=>'search'),
 		);
 	}
 
@@ -55,6 +55,7 @@ class Produser extends CActiveRecord
 			'prod_id' => 'Prod',
 			'name' => 'Name',
 			'parent_id' => 'Parent',
+            'category_id' => 'Categories',
 		);
 	}
 
@@ -79,11 +80,43 @@ class Produser extends CActiveRecord
 		$criteria->compare('prod_id',$this->prod_id);
 		$criteria->compare('name',$this->name,true);
 		$criteria->compare('parent_id',$this->parent_id);
+        $criteria->compare('category_id',$this->parent_id);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
 	}
+
+    public function getMainWatch()
+    {
+        return $this->findAll("parent_id = '0' AND category_id = '1'");
+
+    }
+
+    public function getByParent($id)
+    {
+        return $this->findAll("parent_id = :id AND category_id = '1'", array('id' =>$id));
+
+    }
+
+    function getProduserName($id) {
+         $result = $this->getByParent($id);
+         foreach($result as $item) {
+             $array[] = $item['prod_id'];
+         }
+        return $array;
+    }
+
+    public function getParentname($id) {
+            $a = $this->find("prod_id = :id AND category_id = '1'", array('id' =>$id));
+            return  $a;
+
+    }
+
+    public function get()
+    {
+
+    }
 
 	/**
 	 * Returns the static model of the specified AR class.
@@ -95,4 +128,12 @@ class Produser extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+    public function notChild($parent_id)
+    {
+        if( $parent_id != null && $parent_id['0']['parent_id'] ) {
+            return $this->getParentname($parent_id['0']['parent_id']);
+        }
+
+    }
 }

@@ -6,7 +6,9 @@
 	<meta name="language" content="en" />
 	
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style.css"/>
-	<!--[if lte IE 8]><script href="<?php echo Yii::app()->request->baseUrl; ?>/css/js/oldies.js" charset="utf-8"></script><![endif]-->	
+	<!--[if lte IE 8]><script href="<?php echo Yii::app()->request->baseUrl; ?>/css/js/oldies.js" charset="utf-8"></script><![endif]-->
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/css/js/ul-drop.js"></script>
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
