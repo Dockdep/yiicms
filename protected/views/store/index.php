@@ -17,7 +17,7 @@ $this->widget('zii.widgets.CListView', array(
     'viewData' => array('categoryName'=>$categoryName),
 	'itemView'=>'_view',
     'summaryText' => '',
-    'sortableAttributes' => array('title', 'date', 'price'),
+    'sortableAttributes' => array('title', 'date', 'gender', 'price'),
     'pager' => array(
         'class' => 'CLinkPager',
         'header' => '',

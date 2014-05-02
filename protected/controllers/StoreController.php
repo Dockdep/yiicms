@@ -39,6 +39,12 @@ class StoreController extends Controller
                 'default'=>'ASC',
                 'label'=>'Дате',
             ),
+            'gender'=>array(
+                'asc'=>'t.gender ASC',
+                'desc'=>'t.gender DESC',
+                'default'=>'ASC',
+                'label'=>'пол',
+            ),
             'price'=>array(
                 'asc'=>'t.price ASC',
                 'desc'=>'t.price DESC',
@@ -277,7 +283,7 @@ class StoreController extends Controller
                 'htmlOptions' => array('class' => 'parentId',
                                         'data-parentId' => $id),
                 'summaryText' => '',
-                'sortableAttributes' => array('title', 'date', 'price'),
+                'sortableAttributes' => array('title', 'date','gender', 'price'),
                 'pager' => array(
                     'class' => 'CLinkPager',
                     'header' => '',

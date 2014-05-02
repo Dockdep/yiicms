@@ -88,7 +88,7 @@ box-shadow:0px 9px 10px 1px #000000;
         font-weight: normal;
 } 
 
-.form-wrapper #submit {
+.form-wrapper #submit  {
 	float: right;    
 	border: 1px solid #72694c;
 	height: 24px;
