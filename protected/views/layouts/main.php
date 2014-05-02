@@ -14,13 +14,11 @@
 </head>
 
 <body>
+
 <div class="sait">
 	<div class="head">
 	<div id="search_f"></div>
-	<form class="form-wrapper" action="./" method="get">
-		<input id="search" type="text" name="s" id="s" value="" placeholder="Я ищу..." />
-		<input id="submit" type="submit" value="найти" />
-	</form>
+        <?php $this->widget('SiteSearch'); ?>
 		<div id="#">
 			<div id="#"><?php echo CHtml::encode(Yii::app()->name); ?></div>
 		</div>

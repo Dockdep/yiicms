@@ -95,7 +95,11 @@ class Produser extends CActiveRecord
 
     public function getByParent($id)
     {
-        return $this->findAll("parent_id = :id AND category_id = '1'", array('id' =>$id));
+        $result = $this->findAll("parent_id = :id AND category_id = '1'", array('id' =>$id));
+        if(!$result) {
+            $result = $this->findAll("prod_id = :id AND category_id = '1'", array('id' =>$id));
+        }
+        return $result;
 
     }
 

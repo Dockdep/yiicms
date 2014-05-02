@@ -35,10 +35,12 @@ $this->widget('zii.widgets.CListView', array(
 <script>
     jQuery(document).ready(function(){
         $("#sidebar_block").on("click", ".sidebar-row", function(event){
-            console.log("fdggfd");
             var row = $(this);
             var id = row.data("id");
-            $.post( "http://yiicms/index.php?r=store/selectgoods", {id: id }, function( data ) {
+            if(id){
+                event.preventDefault();
+            }
+            $.get( "http://yiicms/index.php?r=store/selectgoods", {parentId: id }, function( data ) {
                 $(".watch_block").find('*').remove();
                 $(".watch_block").append(data);
             });
@@ -49,7 +51,7 @@ $this->widget('zii.widgets.CListView', array(
             var row = $(this);
             var id = row.data("id");
             var block = row.parents('.sidebar_left');
-            $.post( "http://yiicms/index.php?r=store/sidebarchild", {id: id }, function( data ) {
+            $.get( "http://yiicms/index.php?r=store/sidebarchild", {parentId: id }, function( data ) {
                 $(block).css("top", "0px");
                 $("#sidebar_block").find(".sidebar_left").not(block).remove();
                 var content = data;

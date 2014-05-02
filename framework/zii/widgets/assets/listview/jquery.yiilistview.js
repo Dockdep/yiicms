@@ -98,6 +98,8 @@
 	 * the URL to be requested is the one that generates the current content of the list view.
 	 */
 	$.fn.yiiListView.update = function(id, options) {
+
+        var parentId = $('.parentId').data('parentid')?$('.parentId').data('parentid'):'';
 		var customError,
 			settings = $.fn.yiiListView.settings[id];
 
@@ -158,19 +160,18 @@
 				}
 			}
 		}, options || {});
-		
+
 		if(options.data!=undefined && options.type=='GET') {
 			options.url = $.param.querystring(options.url, options.data);
 			options.data = {};
 		}
-		
 		if(settings.ajaxVar)
 			options.url = $.param.querystring(options.url, settings.ajaxVar+'='+id);
-		
+
 		if(yiiXHR[id] != null) {
 			yiiXHR[id].abort();	
 		}
-		
+
 		$('#'+id).addClass(settings.loadingClass);
 
 		if(settings.beforeAjaxUpdate != undefined)

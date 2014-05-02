@@ -5,7 +5,7 @@
             <?php
                 $model = new Produser();
                 $item = $model->notChild($this->sidebar);
-                echo CHtml::link("Все часы {$item['name']}",array('/store'), array('title'=>"Просмотреть все часы {$item['name']}", "data-id" => $item['prod_id'] ));
+                echo CHtml::link("Все часы {$item['name']}",array('/store'), array('title'=>"Просмотреть все часы {$item['name']}", "data-id" => $item['prod_id'], 'class' => "sidebar-row" ));
             ?>
         </li>
         <?php foreach($this->sidebar as $item):?>

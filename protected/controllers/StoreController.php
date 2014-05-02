@@ -21,6 +21,34 @@ class StoreController extends Controller
 		);
 	}
 
+    public function getSort() {
+        $sort = new CSort();
+        $sort->sortVar = 'sort';
+        $sort->defaultOrder = 't.date ASC';
+        $sort->multiSort = true;
+        $sort->attributes = array(
+            'title'=>array(
+                'label'=>'Названию',
+                'asc'=>'t.title ASC',
+                'desc'=>'t.title DESC',
+                'default'=>'desc',
+            ),
+            'date'=>array(
+                'asc'=>'t.date ASC',
+                'desc'=>'t.date DESC',
+                'default'=>'ASC',
+                'label'=>'Дате',
+            ),
+            'price'=>array(
+                'asc'=>'t.price ASC',
+                'desc'=>'t.price DESC',
+                'default'=>'desc',
+                'label'=>'Цене',
+            ),
+        );
+        return $sort;
+    }
+
 	/**
 	 * Specifies the access control rules.
 	 * This method is used by the 'accessControl' filter.
@@ -30,7 +58,7 @@ class StoreController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view', 'sidebarchild', 'selectgoods' ),
+				'actions'=>array('index','view', 'sidebarchild', 'selectgoods', 'search' ),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -129,19 +157,21 @@ class StoreController extends Controller
 	{
         $model = Goods::model()->findAll();
 
-            $num=count($model);
-            for($i=0; $i<$num; $i++){
-               $id = $model[$i]['child_id'];
-                $this->categoryName[$id]['name'] = Produser::model()->findByPk($id)->parent_id;
-                if($this->categoryName[$id]['name']){
-                    $this->categoryName[$id]['name']= Produser::model()->find('prod_id = :parentId', array(':parentId' => $this->categoryName[$id]['name']))->name;
-                } else {
-                    $this->categoryName[$id]['name'] = Produser::model()->findByPk($id)->name;
-                }
+        $num=count($model);
+        for($i=0; $i<$num; $i++){
+           $id = $model[$i]['child_id'];
+            $this->categoryName[$id]['name'] = Produser::model()->findByPk($id)->parent_id;
+            if($this->categoryName[$id]['name']){
+                $this->categoryName[$id]['name']= Produser::model()->find('prod_id = :parentId', array(':parentId' => $this->categoryName[$id]['name']))->name;
+            } else {
+                $this->categoryName[$id]['name'] = Produser::model()->findByPk($id)->name;
             }
+        }
+        $sort = $this->getSort();
         $dataProvider=new CActiveDataProvider('Goods', array(
-        'pagination' => array(
-            'pageSize' =>6,
+            'sort'=>$sort,
+            'pagination' => array(
+                'pageSize' =>6,
         )
         ));
 
@@ -170,8 +200,8 @@ class StoreController extends Controller
 
     public function actionSidebarChild()
     {
-        if(isset($_POST['id'])) {
-            $id = $_POST['id'];
+        if(isset($_GET['parentId'])) {
+            $id = $_GET['parentId'];
             $this->sidebar = Produser::model()->getByParent($id);
             $this->renderPartial('_sidebar', $this->sidebar);
         }
@@ -192,14 +222,39 @@ class StoreController extends Controller
 		return $model;
 	}
 
+
     public function actionSelectGoods()
     {
-        if(isset($_POST['id'])) {
-            $id = $_POST['id'];
+        $sort = $this->getSort();
+
+        if(isset($_GET['parentId'])) {
+            $id = $_GET['parentId'];
             $produser =  Produser::model();
             $array = $produser->getProduserName($id);
             array_push($array, $id);
             $model = Goods::model()->findAllByAttributes(array('child_id' =>$array));
+            $array = implode("','", $array);
+            $dataProvider=new CActiveDataProvider('Goods', array(
+                'criteria'=>array(
+                    'select'=> '*',
+                    'condition'=>"child_id IN ('$array')",
+                ),
+                'sort'=>$sort,
+                'pagination' => array(
+                    'pageSize' =>6,
+                )
+            ));
+        } else {
+            $model = Goods::model()->findAll();
+            $produser =  Produser::model();
+            $dataProvider=new CActiveDataProvider('Goods', array(
+                'sort'=>$sort,
+                'pagination' => array(
+                    'pageSize' =>6,
+                )
+            ));
+        }
+
             $num=count($model);
             for($i=0; $i<$num; $i++){
                 $id = $model[$i]['child_id'];
@@ -210,22 +265,19 @@ class StoreController extends Controller
                     $this->categoryName[$id]['name'] = $produser->findByPk($id)->name;
                 }
             }
-            $dataProvider=new CArrayDataProvider($model, array(
-                'sort'=>array(
-                    'attributes'=>array(
-                        'title', 'date', 'price'
-                    ),
-                ),
-                'pagination'=>array(
-                    'pageSize'=>'6',
-                ),
-            ));
+
+
+
+            $id = $_GET['parentId'];
 
             $this->widget('zii.widgets.CListView', array(
                 'dataProvider'=>$dataProvider,
                 'viewData' => array('categoryName'=>$this->categoryName),
                 'itemView'=>'_view',
+                'htmlOptions' => array('class' => 'parentId',
+                                        'data-parentId' => $id),
                 'summaryText' => '',
+                'sortableAttributes' => array('title', 'date', 'price'),
                 'pager' => array(
                     'class' => 'CLinkPager',
                     'header' => '',
@@ -238,8 +290,6 @@ class StoreController extends Controller
                 ),
 
             ));
-
-        }
     }
 
 
@@ -255,4 +305,40 @@ class StoreController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+    public function actionSearch()
+    {
+        $search = new SiteSearchForm;
+
+        if(isset($_POST['SiteSearchForm'])) {
+            $search->attributes = $_POST['SiteSearchForm'];
+            $_GET['searchString'] = $search->string;
+        } else {
+            $search->string = $_GET['searchString'];
+        }
+
+        $criteria = new CDbCriteria(array(
+            'condition' => 'title LIKE :keyword',
+            'order' => 'date DESC',
+            'params' => array(
+                ':keyword' => '%'.$search->string.'%',
+            ),
+        ));
+
+        $materialCount = Goods::model()->count($criteria);
+        $pages = new CPagination($materialCount);
+        $pages->pageSize = Yii::app()->params['materialsPerPage'];
+        $pages->applyLimit($criteria);
+
+        $materials = Goods::model()->findAll($criteria);
+
+        $this->render('found',array(
+            'materials' => $materials,
+            'pages' => $pages,
+            'search' => $search,
+        ));
+
+    }
+
 }
+

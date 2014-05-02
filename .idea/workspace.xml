@@ -2,17 +2,504 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b402bd26-4a04-40f4-bce7-92034a7b59e4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Goods.php" afterPath="$PROJECT_DIR$/protected/models/Goods.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/components/SiteSearch.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/models/SiteSearchForm.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/store/found.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/components/views/siteSearch.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/autocomplete/indicator.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/autocomplete/jquery.autocomplete.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jquery.ajaxqueue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jquery.autocomplete.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jquery.ba-bbq.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jquery.ba-bbq.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jquery.bgiframe.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jquery.cookie.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jquery.history.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jquery.maskedinput.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jquery.maskedinput.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jquery.metadata.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jquery.multifile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jquery.rating.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jquery.treeview.async.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jquery.treeview.edit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jquery.treeview.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jquery.yii.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jquery.yiiactiveform.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jquery.yiitab.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jui/css/base/images/ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jui/css/base/images/ui-bg_flat_75_ffffff_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jui/css/base/images/ui-bg_glass_55_fbf9ee_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jui/css/base/images/ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jui/css/base/images/ui-bg_glass_75_dadada_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jui/css/base/images/ui-bg_glass_75_e6e6e6_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jui/css/base/images/ui-bg_glass_95_fef1ec_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jui/css/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jui/css/base/images/ui-icons_222222_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jui/css/base/images/ui-icons_2e83ff_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jui/css/base/images/ui-icons_454545_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jui/css/base/images/ui-icons_888888_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jui/css/base/images/ui-icons_cd0a0a_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jui/css/base/jquery-ui.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jui/css/base/jquery.ui.accordion.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jui/css/base/jquery.ui.autocomplete.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jui/css/base/jquery.ui.button.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jui/css/base/jquery.ui.core.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jui/css/base/jquery.ui.datepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jui/css/base/jquery.ui.dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jui/css/base/jquery.ui.menu.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jui/css/base/jquery.ui.progressbar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jui/css/base/jquery.ui.resizable.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jui/css/base/jquery.ui.selectable.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jui/css/base/jquery.ui.slider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jui/css/base/jquery.ui.spinner.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jui/css/base/jquery.ui.tabs.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jui/css/base/jquery.ui.theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jui/css/base/jquery.ui.tooltip.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jui/js/jquery-ui-i18n.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/jui/js/jquery-ui.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/punycode.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/punycode.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/rating/delete.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/rating/jquery.rating.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/rating/star.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/treeview/images/ajax-loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/treeview/images/file.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/treeview/images/folder-closed.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/treeview/images/folder.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/treeview/images/minus.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/treeview/images/plus.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/treeview/images/treeview-black-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/treeview/images/treeview-black.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/treeview/images/treeview-default-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/treeview/images/treeview-default.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/treeview/images/treeview-famfamfam-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/treeview/images/treeview-famfamfam.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/treeview/images/treeview-gray-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/treeview/images/treeview-gray.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/treeview/images/treeview-red-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/treeview/images/treeview-red.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/treeview/jquery.treeview.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/41e27421/yiitab/jquery.yiitab.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/88e0fd7a/detailview/styles.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/88e0fd7a/gridview/bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/88e0fd7a/gridview/delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/88e0fd7a/gridview/down.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/88e0fd7a/gridview/jquery.yiigridview.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/88e0fd7a/gridview/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/88e0fd7a/gridview/styles.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/88e0fd7a/gridview/up.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/88e0fd7a/gridview/update.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/88e0fd7a/gridview/view.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/88e0fd7a/listview/down.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/88e0fd7a/listview/jquery.yiilistview.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/88e0fd7a/listview/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/88e0fd7a/listview/styles.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/88e0fd7a/listview/up.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/dea12103/pager.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\1ae14c2d\detailview\styles.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\1ae14c2d\gridview\bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\1ae14c2d\gridview\delete.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\1ae14c2d\gridview\down.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\1ae14c2d\gridview\jquery.yiigridview.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\1ae14c2d\gridview\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\1ae14c2d\gridview\styles.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\1ae14c2d\gridview\up.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\1ae14c2d\gridview\update.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\1ae14c2d\gridview\view.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\1ae14c2d\listview\down.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\1ae14c2d\listview\jquery.yiilistview.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\1ae14c2d\listview\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\1ae14c2d\listview\styles.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\1ae14c2d\listview\up.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\autocomplete\indicator.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\autocomplete\jquery.autocomplete.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jquery.ajaxqueue.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jquery.autocomplete.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jquery.ba-bbq.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jquery.ba-bbq.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jquery.bgiframe.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jquery.cookie.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jquery.history.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jquery.maskedinput.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jquery.maskedinput.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jquery.metadata.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jquery.multifile.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jquery.rating.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jquery.treeview.async.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jquery.treeview.edit.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jquery.treeview.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jquery.yii.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jquery.yiiactiveform.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jquery.yiitab.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jui\css\base\images\ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jui\css\base\images\ui-bg_flat_75_ffffff_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jui\css\base\images\ui-bg_glass_55_fbf9ee_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jui\css\base\images\ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jui\css\base\images\ui-bg_glass_75_dadada_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jui\css\base\images\ui-bg_glass_75_e6e6e6_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jui\css\base\images\ui-bg_glass_95_fef1ec_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jui\css\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jui\css\base\images\ui-icons_222222_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jui\css\base\images\ui-icons_2e83ff_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jui\css\base\images\ui-icons_454545_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jui\css\base\images\ui-icons_888888_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jui\css\base\images\ui-icons_cd0a0a_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jui\css\base\jquery-ui.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jui\css\base\jquery.ui.accordion.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jui\css\base\jquery.ui.autocomplete.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jui\css\base\jquery.ui.button.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jui\css\base\jquery.ui.core.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jui\css\base\jquery.ui.datepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jui\css\base\jquery.ui.dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jui\css\base\jquery.ui.menu.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jui\css\base\jquery.ui.progressbar.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jui\css\base\jquery.ui.resizable.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jui\css\base\jquery.ui.selectable.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jui\css\base\jquery.ui.slider.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jui\css\base\jquery.ui.spinner.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jui\css\base\jquery.ui.tabs.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jui\css\base\jquery.ui.theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jui\css\base\jquery.ui.tooltip.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jui\js\jquery-ui-i18n.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\jui\js\jquery-ui.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\punycode.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\punycode.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\rating\delete.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\rating\jquery.rating.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\rating\star.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\treeview\images\ajax-loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\treeview\images\file.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\treeview\images\folder-closed.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\treeview\images\folder.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\treeview\images\minus.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\treeview\images\plus.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\treeview\images\treeview-black-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\treeview\images\treeview-black.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\treeview\images\treeview-default-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\treeview\images\treeview-default.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\treeview\images\treeview-famfamfam-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\treeview\images\treeview-famfamfam.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\treeview\images\treeview-gray-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\treeview\images\treeview-gray.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\treeview\images\treeview-red-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\treeview\images\treeview-red.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\treeview\jquery.treeview.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2189d8be\yiitab\jquery.yiitab.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2a57bcbe\css\ie.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2a57bcbe\css\main.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2a57bcbe\css\print.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2a57bcbe\css\screen.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2a57bcbe\images\logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2a57bcbe\js\fancybox\blank.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2a57bcbe\js\fancybox\fancy_close.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2a57bcbe\js\fancybox\fancy_loading.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2a57bcbe\js\fancybox\fancy_nav_left.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2a57bcbe\js\fancybox\fancy_nav_right.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2a57bcbe\js\fancybox\fancy_shadow_e.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2a57bcbe\js\fancybox\fancy_shadow_n.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2a57bcbe\js\fancybox\fancy_shadow_ne.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2a57bcbe\js\fancybox\fancy_shadow_nw.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2a57bcbe\js\fancybox\fancy_shadow_s.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2a57bcbe\js\fancybox\fancy_shadow_se.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2a57bcbe\js\fancybox\fancy_shadow_sw.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2a57bcbe\js\fancybox\fancy_shadow_w.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2a57bcbe\js\fancybox\fancy_title_left.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2a57bcbe\js\fancybox\fancy_title_main.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2a57bcbe\js\fancybox\fancy_title_over.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2a57bcbe\js\fancybox\fancy_title_right.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2a57bcbe\js\fancybox\fancybox-x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2a57bcbe\js\fancybox\fancybox-y.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2a57bcbe\js\fancybox\fancybox.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2a57bcbe\js\fancybox\jquery.fancybox-1.3.1.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2a57bcbe\js\fancybox\jquery.fancybox-1.3.1.pack.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2a57bcbe\js\main.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2a57bcbe\js\tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\2ccb3ccb\pager.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\317e726d\pager.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\754028b\detailview\styles.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\754028b\gridview\bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\754028b\gridview\delete.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\754028b\gridview\down.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\754028b\gridview\jquery.yiigridview.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\754028b\gridview\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\754028b\gridview\styles.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\754028b\gridview\up.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\754028b\gridview\update.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\754028b\gridview\view.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\754028b\listview\down.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\754028b\listview\jquery.yiilistview.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\754028b\listview\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\754028b\listview\styles.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\754028b\listview\up.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\7a8ae0b2\detailview\styles.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\7a8ae0b2\gridview\bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\7a8ae0b2\gridview\delete.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\7a8ae0b2\gridview\down.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\7a8ae0b2\gridview\jquery.yiigridview.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\7a8ae0b2\gridview\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\7a8ae0b2\gridview\styles.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\7a8ae0b2\gridview\up.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\7a8ae0b2\gridview\update.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\7a8ae0b2\gridview\view.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\7a8ae0b2\listview\down.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\7a8ae0b2\listview\jquery.yiilistview.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\7a8ae0b2\listview\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\7a8ae0b2\listview\styles.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\7a8ae0b2\listview\up.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\autocomplete\indicator.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\autocomplete\jquery.autocomplete.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jquery.ajaxqueue.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jquery.autocomplete.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jquery.ba-bbq.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jquery.ba-bbq.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jquery.bgiframe.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jquery.cookie.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jquery.history.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jquery.maskedinput.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jquery.maskedinput.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jquery.metadata.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jquery.multifile.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jquery.rating.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jquery.treeview.async.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jquery.treeview.edit.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jquery.treeview.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jquery.yii.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jquery.yiiactiveform.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jquery.yiitab.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jui\css\base\images\ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jui\css\base\images\ui-bg_flat_75_ffffff_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jui\css\base\images\ui-bg_glass_55_fbf9ee_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jui\css\base\images\ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jui\css\base\images\ui-bg_glass_75_dadada_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jui\css\base\images\ui-bg_glass_75_e6e6e6_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jui\css\base\images\ui-bg_glass_95_fef1ec_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jui\css\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jui\css\base\images\ui-icons_222222_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jui\css\base\images\ui-icons_2e83ff_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jui\css\base\images\ui-icons_454545_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jui\css\base\images\ui-icons_888888_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jui\css\base\images\ui-icons_cd0a0a_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jui\css\base\jquery-ui.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jui\css\base\jquery.ui.accordion.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jui\css\base\jquery.ui.autocomplete.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jui\css\base\jquery.ui.button.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jui\css\base\jquery.ui.core.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jui\css\base\jquery.ui.datepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jui\css\base\jquery.ui.dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jui\css\base\jquery.ui.menu.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jui\css\base\jquery.ui.progressbar.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jui\css\base\jquery.ui.resizable.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jui\css\base\jquery.ui.selectable.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jui\css\base\jquery.ui.slider.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jui\css\base\jquery.ui.spinner.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jui\css\base\jquery.ui.tabs.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jui\css\base\jquery.ui.theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jui\css\base\jquery.ui.tooltip.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jui\js\jquery-ui-i18n.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\jui\js\jquery-ui.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\punycode.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\punycode.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\rating\delete.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\rating\jquery.rating.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\rating\star.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\treeview\images\ajax-loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\treeview\images\file.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\treeview\images\folder-closed.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\treeview\images\folder.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\treeview\images\minus.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\treeview\images\plus.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\treeview\images\treeview-black-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\treeview\images\treeview-black.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\treeview\images\treeview-default-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\treeview\images\treeview-default.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\treeview\images\treeview-famfamfam-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\treeview\images\treeview-famfamfam.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\treeview\images\treeview-gray-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\treeview\images\treeview-gray.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\treeview\images\treeview-red-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\treeview\images\treeview-red.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\treeview\jquery.treeview.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\8a983f8f\yiitab\jquery.yiitab.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\autocomplete\indicator.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\autocomplete\jquery.autocomplete.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jquery.ajaxqueue.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jquery.autocomplete.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jquery.ba-bbq.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jquery.ba-bbq.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jquery.bgiframe.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jquery.cookie.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jquery.history.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jquery.maskedinput.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jquery.maskedinput.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jquery.metadata.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jquery.multifile.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jquery.rating.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jquery.treeview.async.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jquery.treeview.edit.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jquery.treeview.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jquery.yii.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jquery.yiiactiveform.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jquery.yiitab.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jui\css\base\images\ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jui\css\base\images\ui-bg_flat_75_ffffff_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jui\css\base\images\ui-bg_glass_55_fbf9ee_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jui\css\base\images\ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jui\css\base\images\ui-bg_glass_75_dadada_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jui\css\base\images\ui-bg_glass_75_e6e6e6_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jui\css\base\images\ui-bg_glass_95_fef1ec_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jui\css\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jui\css\base\images\ui-icons_222222_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jui\css\base\images\ui-icons_2e83ff_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jui\css\base\images\ui-icons_454545_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jui\css\base\images\ui-icons_888888_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jui\css\base\images\ui-icons_cd0a0a_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jui\css\base\jquery-ui.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jui\css\base\jquery.ui.accordion.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jui\css\base\jquery.ui.autocomplete.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jui\css\base\jquery.ui.button.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jui\css\base\jquery.ui.core.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jui\css\base\jquery.ui.datepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jui\css\base\jquery.ui.dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jui\css\base\jquery.ui.menu.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jui\css\base\jquery.ui.progressbar.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jui\css\base\jquery.ui.resizable.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jui\css\base\jquery.ui.selectable.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jui\css\base\jquery.ui.slider.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jui\css\base\jquery.ui.spinner.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jui\css\base\jquery.ui.tabs.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jui\css\base\jquery.ui.theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jui\css\base\jquery.ui.tooltip.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jui\js\jquery-ui-i18n.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\jui\js\jquery-ui.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\punycode.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\punycode.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\rating\delete.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\rating\jquery.rating.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\rating\star.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\treeview\images\ajax-loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\treeview\images\file.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\treeview\images\folder-closed.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\treeview\images\folder.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\treeview\images\minus.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\treeview\images\plus.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\treeview\images\treeview-black-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\treeview\images\treeview-black.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\treeview\images\treeview-default-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\treeview\images\treeview-default.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\treeview\images\treeview-famfamfam-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\treeview\images\treeview-famfamfam.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\treeview\images\treeview-gray-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\treeview\images\treeview-gray.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\treeview\images\treeview-red-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\treeview\images\treeview-red.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\treeview\jquery.treeview.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\ce568bd0\yiitab\jquery.yiitab.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\e88b51e5\detailview\styles.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\e88b51e5\gridview\bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\e88b51e5\gridview\delete.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\e88b51e5\gridview\down.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\e88b51e5\gridview\jquery.yiigridview.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\e88b51e5\gridview\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\e88b51e5\gridview\styles.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\e88b51e5\gridview\up.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\e88b51e5\gridview\update.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\e88b51e5\gridview\view.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\e88b51e5\listview\down.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\e88b51e5\listview\jquery.yiilistview.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\e88b51e5\listview\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\e88b51e5\listview\styles.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\e88b51e5\listview\up.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\autocomplete\indicator.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\autocomplete\jquery.autocomplete.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jquery.ajaxqueue.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jquery.autocomplete.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jquery.ba-bbq.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jquery.ba-bbq.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jquery.bgiframe.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jquery.cookie.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jquery.history.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jquery.maskedinput.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jquery.maskedinput.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jquery.metadata.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jquery.multifile.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jquery.rating.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jquery.treeview.async.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jquery.treeview.edit.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jquery.treeview.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jquery.yii.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jquery.yiiactiveform.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jquery.yiitab.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jui\css\base\images\ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jui\css\base\images\ui-bg_flat_75_ffffff_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jui\css\base\images\ui-bg_glass_55_fbf9ee_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jui\css\base\images\ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jui\css\base\images\ui-bg_glass_75_dadada_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jui\css\base\images\ui-bg_glass_75_e6e6e6_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jui\css\base\images\ui-bg_glass_95_fef1ec_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jui\css\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jui\css\base\images\ui-icons_222222_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jui\css\base\images\ui-icons_2e83ff_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jui\css\base\images\ui-icons_454545_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jui\css\base\images\ui-icons_888888_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jui\css\base\images\ui-icons_cd0a0a_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jui\css\base\jquery-ui.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jui\css\base\jquery.ui.accordion.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jui\css\base\jquery.ui.autocomplete.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jui\css\base\jquery.ui.button.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jui\css\base\jquery.ui.core.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jui\css\base\jquery.ui.datepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jui\css\base\jquery.ui.dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jui\css\base\jquery.ui.menu.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jui\css\base\jquery.ui.progressbar.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jui\css\base\jquery.ui.resizable.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jui\css\base\jquery.ui.selectable.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jui\css\base\jquery.ui.slider.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jui\css\base\jquery.ui.spinner.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jui\css\base\jquery.ui.tabs.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jui\css\base\jquery.ui.theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jui\css\base\jquery.ui.tooltip.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jui\js\jquery-ui-i18n.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\jui\js\jquery-ui.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\punycode.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\punycode.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\rating\delete.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\rating\jquery.rating.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\rating\star.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\treeview\images\ajax-loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\treeview\images\file.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\treeview\images\folder-closed.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\treeview\images\folder.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\treeview\images\minus.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\treeview\images\plus.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\treeview\images\treeview-black-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\treeview\images\treeview-black.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\treeview\images\treeview-default-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\treeview\images\treeview-default.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\treeview\images\treeview-famfamfam-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\treeview\images\treeview-famfamfam.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\treeview\images\treeview-gray-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\treeview\images\treeview-gray.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\treeview\images\treeview-red-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\treeview\images\treeview-red.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\treeview\jquery.treeview.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Server\Apache24\htdocs\yiicms\assets\eaf39310\yiitab\jquery.yiitab.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Produser.php" afterPath="$PROJECT_DIR$/protected/models/Produser.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/StoreController.php" afterPath="$PROJECT_DIR$/protected/controllers/StoreController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/store/_sidebar.php" afterPath="$PROJECT_DIR$/protected/views/store/_sidebar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/store/_view.php" afterPath="$PROJECT_DIR$/protected/views/store/_view.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/store/index.php" afterPath="$PROJECT_DIR$/protected/views/store/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/assets/listview/jquery.yiilistview.js" afterPath="$PROJECT_DIR$/framework/zii/widgets/assets/listview/jquery.yiilistview.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/main.php" afterPath="$PROJECT_DIR$/protected/views/layouts/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main_admin.css" afterPath="$PROJECT_DIR$/css/main_admin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/store/view.php" afterPath="$PROJECT_DIR$/protected/views/store/view.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="yiicms.iws" />
@@ -36,19 +523,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/store/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="47" selection-start="1204" selection-end="1204" vertical-scroll-proportion="-25.5" vertical-offset="51" max-vertical-offset="1241">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_view.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/store/_view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="101" selection-start="1186" selection-end="1186" vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="1445">
+            <state line="27" column="0" selection-start="1257" selection-end="1257" vertical-scroll-proportion="-17.653847" vertical-offset="0" max-vertical-offset="1445">
               <folding>
                 <element signature="e#1266#2764#0" expanded="true" />
               </folding>
@@ -56,79 +534,82 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="update.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/store/update.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="442">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StoreController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="StoreController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/StoreController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="216" column="22" selection-start="6241" selection-end="6241" vertical-scroll-proportion="0.055489965" vertical-offset="3625" max-vertical-offset="4488">
+            <state line="321" column="28" selection-start="9296" selection-end="9296" vertical-scroll-proportion="-18.5" vertical-offset="4976" max-vertical-offset="5950">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginForm.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/models/LoginForm.php">
+      <file leaf-file-name="found.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/store/found.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1411">
+            <state line="4" column="120" selection-start="294" selection-end="294" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="663">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Goods.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/models/Goods.php">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="39" selection-start="2969" selection-end="2969" vertical-scroll-proportion="-11.307693" vertical-offset="1185" max-vertical-offset="2108">
+            <state line="42" column="10" selection-start="3901" selection-end="3908" vertical-scroll-proportion="-27.461538" vertical-offset="0" max-vertical-offset="1292">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SiteController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
+      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1938">
+            <state line="20" column="45" selection-start="940" selection-end="940" vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="1258">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Produser.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/models/Produser.php">
+      <file leaf-file-name="SiteSearch.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/components/SiteSearch.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="22" selection-start="2817" selection-end="2817" vertical-scroll-proportion="-17.192308" vertical-offset="1355" max-vertical-offset="2465">
+            <state line="9" column="5" selection-start="210" selection-end="210" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="255">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_sidebar.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/store/_sidebar.php">
+      <file leaf-file-name="siteSearch.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/components/views/siteSearch.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="12" selection-start="451" selection-end="451" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="408">
-              <folding>
-                <marker date="1398620451145" expanded="true" signature="450:521" placeholder="..." />
-                <marker date="1398620451145" expanded="true" signature="450:471" placeholder="..." />
-                <marker date="1398620451145" expanded="true" signature="450:471" placeholder="..." />
-                <marker date="1398620451145" expanded="true" signature="450:470" placeholder="..." />
-                <marker date="1398620451145" expanded="true" signature="450:470" placeholder="..." />
-              </folding>
+            <state line="1" column="25" selection-start="43" selection-end="43" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="306">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/store/view.php">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="0" selection-start="2004" selection-end="2004" vertical-scroll-proportion="-32.03846" vertical-offset="0" max-vertical-offset="1037">
+            <state line="5" column="37" selection-start="106" selection-end="106" vertical-scroll-proportion="0.096045196" vertical-offset="0" max-vertical-offset="8126">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SiteSearchForm.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/models/SiteSearchForm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="1" selection-start="238" selection-end="238" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="340">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="searchform.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/layouts/searchform.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="7" selection-start="222" selection-end="222" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="153">
               <folding />
             </state>
           </provider>
@@ -157,22 +638,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/protected/modules/admin/controllers/GoodsController.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/views/goods/_form.php" />
-        <option value="$PROJECT_DIR$/protected/views/produser/_search.php" />
-        <option value="$PROJECT_DIR$/protected/views/produser/_view.php" />
-        <option value="$PROJECT_DIR$/protected/views/produser/sidebar.php" />
-        <option value="$PROJECT_DIR$/protected/views/store/_detail.php" />
         <option value="$PROJECT_DIR$/test.php" />
-        <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/protected/views/store/view.php" />
-        <option value="$PROJECT_DIR$/protected/views/store/_sidebar.php" />
-        <option value="$PROJECT_DIR$/protected/models/Produser.php" />
         <option value="$PROJECT_DIR$/protected/models/Goods.php" />
-        <option value="$PROJECT_DIR$/protected/views/store/_view.php" />
+        <option value="$PROJECT_DIR$/protected/models/Produser.php" />
+        <option value="$PROJECT_DIR$/framework/zii/widgets/assets/listview/jquery.yiilistview.js" />
+        <option value="$PROJECT_DIR$/protected/views/store/_sidebar.php" />
         <option value="$PROJECT_DIR$/protected/views/store/index.php" />
+        <option value="$PROJECT_DIR$/protected/components/SiteSearch.php" />
+        <option value="$PROJECT_DIR$/protected/models/SiteSearchForm.php" />
+        <option value="$PROJECT_DIR$/protected/views/found.php" />
         <option value="$PROJECT_DIR$/protected/controllers/StoreController.php" />
+        <option value="$PROJECT_DIR$/protected/views/store/_view.php" />
+        <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
+        <option value="$PROJECT_DIR$/protected/components/views/siteSearch.php" />
+        <option value="$PROJECT_DIR$/protected/views/store/found.php" />
       </list>
     </option>
   </component>
@@ -261,11 +742,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="store" />
+              <option name="myItemId" value="tests" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -283,7 +760,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="runtime" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -301,11 +778,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
+              <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -323,7 +796,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -373,6 +850,64 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yiicms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yiicms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yiicms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yiicms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yiicms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yiicms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -387,8 +922,8 @@
     <property name="options.lastSelected" value="vcs.Subversion" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig" serverName="yiicms" serverId="debb3f72-0d25-45a1-975a-f9cfd90e18ff">
     <servers>
@@ -407,6 +942,7 @@
       <recent name="C:\Server\Apache24\htdocs\yiicms\protected\controllers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Server\Apache24\htdocs\yiicms\protected\views\store" />
       <recent name="C:\Server\Apache24\htdocs\yiicms\protected\views\produser" />
     </key>
   </component>
@@ -479,32 +1015,37 @@
       <created>1397946860913</created>
       <updated>1397946860913</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="tyukjityuuiy">
+      <created>1398627477838</created>
+      <updated>1398627477838</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24947916" sideWeight="0.67099565" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24947916" sideWeight="0.67099565" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -525,30 +1066,39 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/layouts/main.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/store/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="565" selection-end="741" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="731">
+        <state line="9" column="44" selection-start="372" selection-end="372" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="1037">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/goods/index.php">
+    <entry file="file://$PROJECT_DIR$/framework/zii/widgets/assets/listview/jquery.yiilistview.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
+        <state line="163" column="60" selection-start="5464" selection-end="5464" vertical-scroll-proportion="-106.08" vertical-offset="0" max-vertical-offset="3077">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/goods/_form.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/store/_sidebar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="157" column="0" selection-start="5774" selection-end="6578" vertical-scroll-proportion="0.0" vertical-offset="2307" max-vertical-offset="3179">
+        <state line="6" column="57" selection-start="193" selection-end="193" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="408">
+          <folding>
+            <marker date="1399044609936" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/store/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="257" selection-end="765" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="1275">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
+    <entry file="file://$PROJECT_DIR$/protected/models/Produser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="256" column="118" selection-start="10434" selection-end="10434" vertical-scroll-proportion="0.0" vertical-offset="3964" max-vertical-offset="8126">
+        <state line="101" column="23" selection-start="2772" selection-end="2772" vertical-scroll-proportion="-35.346153" vertical-offset="798" max-vertical-offset="2533">
           <folding />
         </state>
       </provider>
@@ -556,109 +1106,78 @@
     <entry file="file://$PROJECT_DIR$/protected/views/store/_search.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1700">
-          <folding>
-            <marker date="1397913467609" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397913467609" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397913467609" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397913467609" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397913467609" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397913467609" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397913467609" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397913467609" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397913467609" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397913467609" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397913467609" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397913467609" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397913467609" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397913467609" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397913467609" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397913467609" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397913467609" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="71" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1292">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/LoginForm.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1411">
+        <state line="42" column="10" selection-start="3901" selection-end="3908" vertical-scroll-proportion="-27.461538" vertical-offset="0" max-vertical-offset="1292">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/store/_sidebar.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/searchform.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="12" selection-start="451" selection-end="451" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="408">
-          <folding>
-            <marker date="1398620451145" expanded="true" signature="450:521" placeholder="..." />
-            <marker date="1398620451145" expanded="true" signature="450:471" placeholder="..." />
-            <marker date="1398620451145" expanded="true" signature="450:471" placeholder="..." />
-            <marker date="1398620451145" expanded="true" signature="450:470" placeholder="..." />
-            <marker date="1398620451145" expanded="true" signature="450:470" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1938">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Produser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="22" selection-start="2817" selection-end="2817" vertical-scroll-proportion="-17.192308" vertical-offset="1355" max-vertical-offset="2465">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/store/update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="898">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Goods.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="39" selection-start="2969" selection-end="2969" vertical-scroll-proportion="-11.307693" vertical-offset="1185" max-vertical-offset="2108">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/store/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="2004" selection-end="2004" vertical-scroll-proportion="-32.03846" vertical-offset="0" max-vertical-offset="1037">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/store/_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="101" selection-start="1186" selection-end="1186" vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="1445">
-          <folding>
-            <element signature="e#1266#2764#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/store/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="47" selection-start="1204" selection-end="1204" vertical-scroll-proportion="-25.5" vertical-offset="51" max-vertical-offset="1241">
+        <state line="3" column="7" selection-start="222" selection-end="222" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="153">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/StoreController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="216" column="22" selection-start="6241" selection-end="6241" vertical-scroll-proportion="0.055489965" vertical-offset="3625" max-vertical-offset="4488">
+        <state line="321" column="28" selection-start="9296" selection-end="9296" vertical-scroll-proportion="-18.5" vertical-offset="4976" max-vertical-offset="5950">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/store/_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="1257" selection-end="1257" vertical-scroll-proportion="-17.653847" vertical-offset="0" max-vertical-offset="1445">
+          <folding>
+            <element signature="e#1266#2764#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="45" selection-start="940" selection-end="940" vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="1258">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/SiteSearchForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="1" selection-start="238" selection-end="238" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/store/found.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="120" selection-start="294" selection-end="294" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="663">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/SiteSearch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="5" selection-start="210" selection-end="210" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/views/siteSearch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="25" selection-start="43" selection-end="43" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="37" selection-start="106" selection-end="106" vertical-scroll-proportion="0.096045196" vertical-offset="0" max-vertical-offset="8126">
           <folding />
         </state>
       </provider>
