@@ -64,7 +64,7 @@ class StoreController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view', 'sidebarchild', 'selectgoods', 'search' ),
+				'actions'=>array('index','view', 'sidebarchild', 'selectgoods', 'search', 'youurofil' ),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -345,6 +345,21 @@ class StoreController extends Controller
         ));
 
     }
+
+    public function actionYouUrofil()
+    {
+        if(isset($_GET['parentId'])) {
+            $id = $_GET['parentId'];
+            $this->sidebar = Produser::model()->getByParent($id);
+             foreach($this->sidebar as $item) {
+                 $id =$item['prod_id'];
+                 $name = $item['name'];
+                echo "<option class = 'newUrofiloFilds' value='$id'>$name</option>";
+             }
+
+        }
+    }
+
 
 }
 

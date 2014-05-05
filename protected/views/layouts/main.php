@@ -1,20 +1,17 @@
 <?php /* @var $this Controller */ ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="en" />
-	
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=10" />-->
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style.css"/>
-	<!--[if lte IE 8]><script href="<?php echo Yii::app()->request->baseUrl; ?>/css/js/oldies.js" charset="utf-8"></script><![endif]-->
+	<!--[if lte IE 8]><script src="<?php echo Yii::app()->request->baseUrl; ?>/css/js/oldies.js" charset="utf-8"></script><![endif]-->
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/css/js/ul-drop.js"></script>
-
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
-
 <body>
-
 <div class="sait">
 	<div class="head">
 	<div id="search_f"></div>
@@ -23,9 +20,6 @@
 			<div id="#"><?php echo CHtml::encode(Yii::app()->name); ?></div>
 		</div>
 	</div>
-
-	
-
 	<div id="menu">
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
@@ -63,6 +57,5 @@
 	</div><!-- footer -->
 
 </div><!-- site -->
-
 </body>
 </html>
